@@ -14,12 +14,14 @@ public class ApiInfoBean {
 
     @PostConstruct
     public void init() {
-        logger.info("ApiInfoBean initialized: appName={}, description={}", appName, description);
+        logger.info("ApiInfoBean initialized: hashCode={}, appName={}, description={}",
+                System.identityHashCode(this), appName, description);
     }
 
     @PreDestroy
     public void cleanup() {
-        logger.info("ApiInfoBean destroyed: appName={}, description={}", appName, description);
+        logger.info("ApiInfoBean destroyed: hashCode={}, appName={}, description={}",
+                System.identityHashCode(this), appName, description);
     }
 
     public String getAppName() {
