@@ -1,6 +1,5 @@
 package edu.bellevue.cis530.week02.controller;
 
-import edu.bellevue.cis530.week02.exception.StudentNotFoundException;
 import edu.bellevue.cis530.week02.model.Student;
 import edu.bellevue.cis530.week02.repository.StudentRepository;
 import edu.bellevue.cis530.week02.service.StudentService;
